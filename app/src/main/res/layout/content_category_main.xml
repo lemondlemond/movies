@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="lemon.movie.category_main"
+    tools:showIn="@layout/activity_category_main"
+    android:background="#000000">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Category"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btncomedy"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtcategory"
+            android:layout_marginTop="15dp"
+            android:text="COMEDY"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:background="#252525"/>
+
+        <Button
+            android:id="@+id/btnromantic"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btncomedy"
+            android:layout_marginTop="10dp"
+            android:text="ROMANTIC"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:background="#252525"/>
+
+        <Button
+            android:id="@+id/btnaction"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnromantic"
+            android:layout_marginTop="10dp"
+            android:text="ACTION"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:background="#252525"/>
+
+        <Button
+            android:id="@+id/btnhorror"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnaction"
+            android:text="HORROR"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:background="#252525"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

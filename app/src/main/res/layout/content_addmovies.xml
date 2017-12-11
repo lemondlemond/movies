@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="lemon.movie.addmovies"
+    tools:showIn="@layout/activity_addmovies">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/add1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#2d2d2d">
+
+                <ImageView
+                    android:id="@+id/UpImg1"
+                    android:layout_width="100dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <Button
+                    android:id="@+id/btnUpImg1"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignEnd="@+id/UpImg1"
+                    android:layout_alignLeft="@+id/UpImg1"
+                    android:layout_alignRight="@+id/UpImg1"
+                    android:layout_alignStart="@+id/UpImg1"
+                    android:layout_below="@+id/UpImg1"
+                    android:layout_marginTop="10dp"
+                    android:background="#af0000"
+                    android:text="upload"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/txtTheater1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/UpImg1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/UpImg1"
+                    android:layout_toRightOf="@+id/UpImg1"
+                    android:text="Theater 1"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textname1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtTheater1"
+                    android:layout_alignStart="@+id/txtTheater1"
+                    android:layout_below="@+id/txtTheater1"
+                    android:layout_marginTop="15dp"
+                    android:text="name :"
+                    android:textColor="#ffffff" />
+
+                <EditText
+                    android:id="@+id/editName1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTheater1"
+                    android:layout_toEndOf="@+id/time11"
+                    android:layout_toRightOf="@+id/time11"
+                    android:backgroundTint="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#ffffff" />
+
+                <RelativeLayout
+                    android:id="@+id/relacate1"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@+id/textname1"
+                    android:layout_alignStart="@+id/textname1"
+                    android:layout_below="@+id/editName1"
+                    android:layout_marginTop="15dp"
+                    android:background="#acacac">
+
+                    <TextView
+                        android:id="@+id/textcate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="Category :" />
+
+                    <Spinner
+                        android:id="@+id/spncate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_toEndOf="@+id/textcate1"
+                        android:layout_toRightOf="@+id/textcate1">
+
+                    </Spinner>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/time1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/btnUpImg1"
+                    android:layout_alignLeft="@+id/relacate1"
+                    android:layout_alignStart="@+id/relacate1"
+                    android:text="time :"
+                    android:textColor="#ffffff" />
+
+                <EditText
+                    android:id="@+id/time11"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@+id/time1"
+                    android:layout_alignStart="@+id/time1"
+                    android:layout_below="@+id/time1"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time12"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time11"
+                    android:layout_toRightOf="@+id/time11"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time13"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time12"
+                    android:layout_toRightOf="@+id/time12"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time14"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@+id/time11"
+                    android:layout_alignStart="@+id/time11"
+                    android:layout_below="@+id/time11"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time15"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time12"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time14"
+                    android:layout_toRightOf="@+id/time14"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time16"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time13"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time15"
+                    android:layout_toRightOf="@+id/time15"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/add2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:background="#2d2d2d">
+
+                <ImageView
+                    android:id="@+id/UpImg2"
+                    android:layout_width="100dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <Button
+                    android:id="@+id/btnUpImg2"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignEnd="@+id/UpImg2"
+                    android:layout_alignLeft="@+id/UpImg2"
+                    android:layout_alignRight="@+id/UpImg2"
+                    android:layout_alignStart="@+id/UpImg2"
+                    android:layout_below="@+id/UpImg2"
+                    android:layout_marginTop="10dp"
+                    android:background="#af0000"
+                    android:text="upload"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/txtTheater2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/UpImg2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/UpImg2"
+                    android:layout_toRightOf="@+id/UpImg2"
+                    android:text="Theater 2"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtTheater2"
+                    android:layout_alignStart="@+id/txtTheater2"
+                    android:layout_below="@+id/txtTheater2"
+                    android:layout_marginTop="15dp"
+                    android:text="name :"
+                    android:textColor="#ffffff" />
+
+                <EditText
+                    android:id="@+id/editName2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTheater2"
+                    android:layout_toEndOf="@+id/time21"
+                    android:layout_toRightOf="@+id/time21"
+                    android:backgroundTint="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#ffffff" />
+
+                <RelativeLayout
+                    android:id="@+id/relacate2"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@+id/textname2"
+                    android:layout_alignStart="@+id/textname2"
+                    android:layout_below="@+id/editName2"
+                    android:layout_marginTop="15dp"
+                    android:background="#acacac">
+
+                    <TextView
+                        android:id="@+id/textcate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="Category :" />
+
+                    <Spinner
+                        android:id="@+id/spncate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_toEndOf="@+id/textcate2"
+                        android:layout_toRightOf="@+id/textcate2">
+
+                    </Spinner>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/btnUpImg2"
+                    android:layout_alignLeft="@+id/relacate2"
+                    android:layout_alignStart="@+id/relacate2"
+                    android:text="time :"
+                    android:textColor="#ffffff" />
+
+                <EditText
+                    android:id="@+id/time21"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@+id/time2"
+                    android:layout_alignStart="@+id/time2"
+                    android:layout_below="@+id/time2"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time22"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time21"
+                    android:layout_toRightOf="@+id/time21"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time23"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time22"
+                    android:layout_toRightOf="@+id/time22"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time24"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@+id/time21"
+                    android:layout_alignStart="@+id/time21"
+                    android:layout_below="@+id/time21"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time25"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time22"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time24"
+                    android:layout_toRightOf="@+id/time24"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time26"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time23"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time25"
+                    android:layout_toRightOf="@+id/time25"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/add3"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:background="#2d2d2d">
+
+                <ImageView
+                    android:id="@+id/UpImg3"
+                    android:layout_width="100dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <Button
+                    android:id="@+id/btnUpImg3"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignEnd="@+id/UpImg3"
+                    android:layout_alignLeft="@+id/UpImg3"
+                    android:layout_alignRight="@+id/UpImg3"
+                    android:layout_alignStart="@+id/UpImg3"
+                    android:layout_below="@+id/UpImg3"
+                    android:layout_marginTop="10dp"
+                    android:background="#af0000"
+                    android:text="upload"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/txtTheater3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/UpImg3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/UpImg3"
+                    android:layout_toRightOf="@+id/UpImg3"
+                    android:text="Theater 3"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textname3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtTheater3"
+                    android:layout_alignStart="@+id/txtTheater3"
+                    android:layout_below="@+id/txtTheater3"
+                    android:layout_marginTop="15dp"
+                    android:text="name :"
+                    android:textColor="#ffffff" />
+
+                <EditText
+                    android:id="@+id/editName3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTheater3"
+                    android:layout_toEndOf="@+id/time31"
+                    android:layout_toRightOf="@+id/time31"
+                    android:backgroundTint="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#ffffff" />
+
+                <RelativeLayout
+                    android:id="@+id/relacate3"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@+id/textname3"
+                    android:layout_alignStart="@+id/textname3"
+                    android:layout_below="@+id/editName3"
+                    android:layout_marginTop="15dp"
+                    android:background="#acacac">
+
+                    <TextView
+                        android:id="@+id/textcate3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="Category :" />
+
+                    <Spinner
+                        android:id="@+id/spncate3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_toEndOf="@+id/textcate3"
+                        android:layout_toRightOf="@+id/textcate3">
+
+                    </Spinner>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/time3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/btnUpImg3"
+                    android:layout_alignLeft="@+id/relacate3"
+                    android:layout_alignStart="@+id/relacate3"
+                    android:text="time :"
+                    android:textColor="#ffffff" />
+
+                <EditText
+                    android:id="@+id/time31"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@+id/time3"
+                    android:layout_alignStart="@+id/time3"
+                    android:layout_below="@+id/time3"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time32"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time31"
+                    android:layout_toRightOf="@+id/time31"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time33"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time32"
+                    android:layout_toRightOf="@+id/time32"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time34"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@+id/time31"
+                    android:layout_alignStart="@+id/time31"
+                    android:layout_below="@+id/time31"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time35"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time32"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time34"
+                    android:layout_toRightOf="@+id/time34"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time36"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time33"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time35"
+                    android:layout_toRightOf="@+id/time35"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/add4"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:background="#2d2d2d">
+
+                <ImageView
+                    android:id="@+id/UpImg4"
+                    android:layout_width="100dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <Button
+                    android:id="@+id/btnUpImg4"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignEnd="@+id/UpImg4"
+                    android:layout_alignLeft="@+id/UpImg4"
+                    android:layout_alignRight="@+id/UpImg4"
+                    android:layout_alignStart="@+id/UpImg4"
+                    android:layout_below="@+id/UpImg4"
+                    android:layout_marginTop="10dp"
+                    android:background="#af0000"
+                    android:text="upload"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/txtTheater4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/UpImg4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/UpImg4"
+                    android:layout_toRightOf="@+id/UpImg4"
+                    android:text="Theater 4"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textname4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtTheater4"
+                    android:layout_alignStart="@+id/txtTheater4"
+                    android:layout_below="@+id/txtTheater4"
+                    android:layout_marginTop="15dp"
+                    android:text="name :"
+                    android:textColor="#ffffff" />
+
+                <EditText
+                    android:id="@+id/editName4"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTheater4"
+                    android:layout_toEndOf="@+id/time41"
+                    android:layout_toRightOf="@+id/time41"
+                    android:backgroundTint="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#ffffff" />
+
+                <RelativeLayout
+                    android:id="@+id/relacate4"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@+id/textname4"
+                    android:layout_alignStart="@+id/textname4"
+                    android:layout_below="@+id/editName4"
+                    android:layout_marginTop="15dp"
+                    android:background="#acacac">
+
+                    <TextView
+                        android:id="@+id/textcate4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="Category :" />
+
+                    <Spinner
+                        android:id="@+id/spncate4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_toEndOf="@+id/textcate4"
+                        android:layout_toRightOf="@+id/textcate4">
+
+                    </Spinner>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/time4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/btnUpImg4"
+                    android:layout_alignLeft="@+id/relacate4"
+                    android:layout_alignStart="@+id/relacate4"
+                    android:text="time :"
+                    android:textColor="#ffffff" />
+
+                <EditText
+                    android:id="@+id/time41"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@+id/time4"
+                    android:layout_alignStart="@+id/time4"
+                    android:layout_below="@+id/time4"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time42"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time4"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time41"
+                    android:layout_toRightOf="@+id/time41"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time43"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time4"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time42"
+                    android:layout_toRightOf="@+id/time42"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time44"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@+id/time41"
+                    android:layout_alignStart="@+id/time41"
+                    android:layout_below="@+id/time41"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time45"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time42"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time44"
+                    android:layout_toRightOf="@+id/time44"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time46"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time43"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time45"
+                    android:layout_toRightOf="@+id/time45"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/add5"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:background="#2d2d2d">
+
+                <ImageView
+                    android:id="@+id/UpImg5"
+                    android:layout_width="100dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <Button
+                    android:id="@+id/btnUpImg5"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignEnd="@+id/UpImg5"
+                    android:layout_alignLeft="@+id/UpImg5"
+                    android:layout_alignRight="@+id/UpImg5"
+                    android:layout_alignStart="@+id/UpImg5"
+                    android:layout_below="@+id/UpImg5"
+                    android:layout_marginTop="10dp"
+                    android:background="#af0000"
+                    android:text="upload"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/txtTheater5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/UpImg5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/UpImg5"
+                    android:layout_toRightOf="@+id/UpImg5"
+                    android:text="Theater 5"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textname5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtTheater5"
+                    android:layout_alignStart="@+id/txtTheater5"
+                    android:layout_below="@+id/txtTheater5"
+                    android:layout_marginTop="15dp"
+                    android:text="name :"
+                    android:textColor="#ffffff" />
+
+                <EditText
+                    android:id="@+id/editName5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTheater5"
+                    android:layout_toEndOf="@+id/time51"
+                    android:layout_toRightOf="@+id/time51"
+                    android:backgroundTint="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#ffffff" />
+
+                <RelativeLayout
+                    android:id="@+id/relacate5"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@+id/textname5"
+                    android:layout_alignStart="@+id/textname5"
+                    android:layout_below="@+id/editName5"
+                    android:layout_marginTop="15dp"
+                    android:background="#acacac">
+
+                    <TextView
+                        android:id="@+id/textcate5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="Category :" />
+
+                    <Spinner
+                        android:id="@+id/spncate5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_toEndOf="@+id/textcate5"
+                        android:layout_toRightOf="@+id/textcate5">
+
+                    </Spinner>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/time5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/btnUpImg5"
+                    android:layout_alignLeft="@+id/relacate5"
+                    android:layout_alignStart="@+id/relacate5"
+                    android:text="time :"
+                    android:textColor="#ffffff" />
+
+                <EditText
+                    android:id="@+id/time51"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@+id/time5"
+                    android:layout_alignStart="@+id/time5"
+                    android:layout_below="@+id/time5"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time52"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time5"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time51"
+                    android:layout_toRightOf="@+id/time51"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time53"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time5"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time52"
+                    android:layout_toRightOf="@+id/time52"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time54"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@+id/time51"
+                    android:layout_alignStart="@+id/time51"
+                    android:layout_below="@+id/time51"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time55"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time52"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time54"
+                    android:layout_toRightOf="@+id/time54"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/time56"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/time53"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time55"
+                    android:layout_toRightOf="@+id/time55"
+                    android:background="#ffffff"
+                    android:inputType="text"
+                    android:textColor="#000000" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/add5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="SUBMIT"
+                android:background="#af0000"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

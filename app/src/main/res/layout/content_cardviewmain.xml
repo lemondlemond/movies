@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="lemon.movie.cardviewmain"
+    tools:showIn="@layout/activity_cardviewmain">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="63dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imagemovie"
+            android:layout_width="100dp"
+            android:layout_height="170dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@drawable/thor" />
+
+        <Button
+            android:id="@+id/buttonbuy"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/imagemovie"
+            android:layout_alignStart="@+id/imagemovie"
+            android:layout_below="@+id/imagemovie"
+            android:background="@drawable/btnred"
+            android:text="จองบัตร"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/Moviename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/imagemovie"
+            android:layout_toRightOf="@+id/imagemovie"
+            android:text="Thor Ragnasok"
+            android:textColor="@color/colorWhite" />
+
+        <ImageView
+            android:id="@+id/clockicon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignLeft="@+id/Moviename"
+            android:layout_alignStart="@+id/Moviename"
+            android:layout_alignTop="@+id/Min"
+            app:srcCompat="@drawable/clockicon" />
+
+        <TextView
+            android:id="@+id/Min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Moviename"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/clockicon"
+            android:layout_toRightOf="@+id/clockicon"
+            android:text="110 mins"
+            android:textColor="@color/colorRedDark"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/time1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/clockicon"
+            android:layout_alignStart="@+id/clockicon"
+            android:layout_below="@+id/clockicon"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorBlack"
+            android:text="12.30"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/time2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/clockicon"
+            android:layout_toRightOf="@+id/time1"
+            android:background="@color/colorBlack"
+            android:text="15.00"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/time3"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/clockicon"
+            android:layout_toRightOf="@+id/time2"
+            android:background="@color/colorBlack"
+            android:text="15.00"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/time4"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/time1"
+            android:layout_alignStart="@+id/time1"
+            android:layout_below="@+id/time1"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorBlack"
+            android:text="12.30"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/time5"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/time2"
+            android:layout_toRightOf="@+id/time4"
+            android:background="@color/colorBlack"
+            android:text="15.00"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/time6"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/time3"
+            android:layout_toRightOf="@+id/time5"
+            android:background="@color/colorBlack"
+            android:text="15.00"
+            android:textColor="@color/colorWhite" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Booking"
+            android:textColor="#ffffff"/>
+
+        <RelativeLayout
+            android:id="@+id/relaspn"
+            android:layout_width="300dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/txtbook"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#e2d7d6">
+
+            <Spinner
+                android:id="@+id/spnname"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/spntime"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_alignTop="@+id/spnname"
+                android:layout_toEndOf="@+id/spnname"
+                android:layout_toRightOf="@+id/spnname">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/textseat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/editSeat"
+                android:layout_toStartOf="@+id/editSeat"
+                android:text="Seat :"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/editSeat"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/textseat"
+                android:layout_alignBottom="@+id/textseat"
+                android:layout_alignEnd="@+id/spnname"
+                android:layout_alignRight="@+id/spnname"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="A10"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/buy"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/spntime"
+                android:layout_alignStart="@+id/spntime"
+                android:layout_alignTop="@+id/editSeat"
+                android:background="#af0000"
+                android:text="Buy"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgseat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="21dp"
+            />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
